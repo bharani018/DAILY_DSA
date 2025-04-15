@@ -3,12 +3,11 @@ k = 3
 
 def SlidingWindowMax(nums, k):
     i=0
-    MSum = 0
+    res = []
     while(k<=len(nums)):
-        crsm = sum(nums[i:k])
-        MSum = max(crsm, MSum)
+        newarr = nums[i:k]
+        res.append(max(newarr))
         i+=1
         k+=1
-    return MSum
-
+    return res
 print(SlidingWindowMax(nums, k))
