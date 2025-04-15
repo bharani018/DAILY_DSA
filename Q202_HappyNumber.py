@@ -14,15 +14,14 @@ def HappyNumbers(n):
         
         if(s==1):
             return True
-        
+        if(n==0):
+            return False
         return HappyNumbers(s)
-            
-    return 0 
     
     
 
 
 
-n = 19
+n = 2
 
 print(HappyNumbers(n))
